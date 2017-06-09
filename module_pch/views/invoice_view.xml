@@ -8,6 +8,7 @@
                 <field name="arch" type="xml">
                     <xpath expr="//field[@name='state']" position="before">
                         <button attrs="{'invisible': ['|', ('boss_validate', '=', True), ('state', '!=', 'draft')]}" type="object" name="validate_boss" string="Validate for boss" class="oe_highlight" />
+                        <button attrs="{'invisible': [('invoice_line_ids', '=', False)]}" type="object" name="write_database_tax" string="write tax with sql" class="oe_highlight" />
                     </xpath>
                     <xpath expr="/form/sheet/notebook/page/group" position="after">
                         <separator string="Validations"/>

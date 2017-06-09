@@ -1,0 +1,252 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* module_pch
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 10.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-06-09 05:49+0000\n"
+"PO-Revision-Date: 2017-06-09 05:49+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: module_pch
+#: model:ir.ui.view,arch_db:module_pch.report_state_invoices
+msgid "<span>S/N</span>"
+msgstr ""
+
+#. module: module_pch
+#: selection:wizard.report.invoices.state,invoice_state:0
+msgid "All"
+msgstr "Todos"
+
+#. module: module_pch
+#: model:ir.ui.view,arch_db:module_pch.wizard_report_invoices_state
+msgid "Apply filter by invoice status"
+msgstr "Aplicar filtro por estado de factura"
+
+#. module: module_pch
+#: model:ir.ui.view,arch_db:module_pch.wizard_validate_boss_masive_invoice
+msgid "Boss validation"
+msgstr "Validación de jefe"
+
+#. module: module_pch
+#: model:ir.ui.view,arch_db:module_pch.wizard_validate_boss_masive_invoice
+#: selection:wizard.report.invoices.state,invoice_state:0
+msgid "Cancel"
+msgstr "Cancelar"
+
+#. module: module_pch
+#: model:ir.ui.view,arch_db:module_pch.wizard_report_invoices_state
+msgid "Cancelar"
+msgstr "Cancelar"
+
+#. module: module_pch
+#: code:addons/module_pch/models/invoice.py:40
+#, python-format
+msgid "Chief approval required to validate invoice"
+msgstr "Aprobación del jefe para validar la factura"
+
+#. module: module_pch
+#: model:ir.ui.view,arch_db:module_pch.report_state_invoices
+msgid "Cliente"
+msgstr "Cliente"
+
+#. module: module_pch
+#: model:ir.model.fields,field_description:module_pch.field_wizard_boss_validate_invoice_multi_create_uid
+#: model:ir.model.fields,field_description:module_pch.field_wizard_report_invoices_state_create_uid
+msgid "Created by"
+msgstr "Creado por"
+
+#. module: module_pch
+#: model:ir.model.fields,field_description:module_pch.field_wizard_boss_validate_invoice_multi_create_date
+#: model:ir.model.fields,field_description:module_pch.field_wizard_report_invoices_state_create_date
+msgid "Created on"
+msgstr "Creado en"
+
+#. module: module_pch
+#: model:ir.model.fields,field_description:module_pch.field_wizard_boss_validate_invoice_multi_display_name
+#: model:ir.model.fields,field_description:module_pch.field_wizard_report_invoices_state_display_name
+msgid "Display Name"
+msgstr ""
+
+#. module: module_pch
+#: selection:wizard.report.invoices.state,invoice_state:0
+msgid "Draft"
+msgstr "Borrador"
+
+#. module: module_pch
+#: model:ir.ui.view,arch_db:module_pch.report_state_invoices
+msgid "Estado"
+msgstr "Estado"
+
+#. module: module_pch
+#: model:ir.ui.view,arch_db:module_pch.report_state_invoices
+msgid "Fecha"
+msgstr "Fecha"
+
+#. module: module_pch
+#: model:ir.actions.act_window,help:module_pch.action_wizard_view_report
+msgid "Generate an invoice report by states"
+msgstr "Generar reporte de factura por estado"
+
+#. module: module_pch
+#: model:ir.ui.view,arch_db:module_pch.wizard_report_invoices_state
+msgid "Generate invoice reporting"
+msgstr "Generar reporte de facutura"
+
+#. module: module_pch
+#: model:ir.ui.view,arch_db:module_pch.wizard_report_invoices_state
+msgid "Generate report"
+msgstr "Generar reporte"
+
+#. module: module_pch
+#: model:ir.model.fields,field_description:module_pch.field_wizard_boss_validate_invoice_multi_id
+#: model:ir.model.fields,field_description:module_pch.field_wizard_report_invoices_state_id
+msgid "ID"
+msgstr ""
+
+#. module: module_pch
+#: model:ir.ui.view,arch_db:module_pch.report_state_invoices
+msgid "Impuestos"
+msgstr "Impuestos"
+
+#. module: module_pch
+#: model:ir.model,name:module_pch.model_account_invoice
+msgid "Invoice"
+msgstr "Factura"
+
+#. module: module_pch
+#: model:ir.actions.report.xml,name:module_pch.state_report_invoices
+msgid "Invoice report by status"
+msgstr "Reporte de factura por estado"
+
+#. module: module_pch
+#: model:ir.model.fields,field_description:module_pch.field_wizard_report_invoices_state_invoice_state
+msgid "Invoice state"
+msgstr "Estado de factura"
+
+#. module: module_pch
+#: model:ir.model.fields,field_description:module_pch.field_wizard_boss_validate_invoice_multi___last_update
+#: model:ir.model.fields,field_description:module_pch.field_wizard_report_invoices_state___last_update
+msgid "Last Modified on"
+msgstr ""
+
+#. module: module_pch
+#: model:ir.model.fields,field_description:module_pch.field_wizard_boss_validate_invoice_multi_write_uid
+#: model:ir.model.fields,field_description:module_pch.field_wizard_report_invoices_state_write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: module_pch
+#: model:ir.model.fields,field_description:module_pch.field_wizard_boss_validate_invoice_multi_write_date
+#: model:ir.model.fields,field_description:module_pch.field_wizard_report_invoices_state_write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: module_pch
+#: model:ir.ui.view,arch_db:module_pch.report_state_invoices
+msgid "Número"
+msgstr "Número"
+
+#. module: module_pch
+#: selection:wizard.report.invoices.state,invoice_state:0
+msgid "Open"
+msgstr "Abierto"
+
+#. module: module_pch
+#: selection:wizard.report.invoices.state,invoice_state:0
+msgid "Paid"
+msgstr "Pagado"
+
+#. module: module_pch
+#: model:ir.ui.view,arch_db:module_pch.wizard_report_invoices_state
+msgid "Press the button to generate report or cancel to close the window."
+msgstr "Pulse el botón para generar informe o cancelar para cerrar la ventana."
+
+#. module: module_pch
+#: model:ir.actions.act_window,name:module_pch.action_wizard_view_report
+msgid "Report invoice state"
+msgstr "Reporte de factura por estado"
+
+#. module: module_pch
+#: model:ir.ui.menu,name:module_pch.menu_generate_report_invoices_wizard
+msgid "Report invoices by state"
+msgstr "Reporte de facturas por estado"
+
+#. module: module_pch
+#: model:ir.ui.view,arch_db:module_pch.report_state_invoices
+msgid "Reporte de facturas por estado"
+msgstr ""
+
+#. module: module_pch
+#: model:ir.ui.view,arch_db:module_pch.report_state_invoices
+msgid "Responsable"
+msgstr "Responsable"
+
+#. module: module_pch
+#: model:ir.ui.view,arch_db:module_pch.report_state_invoices
+msgid "Subtotal"
+msgstr "Subtotal"
+
+#. module: module_pch
+#: model:ir.ui.view,arch_db:module_pch.report_state_invoices
+msgid "Terminos de pago"
+msgstr "Terminos de pago"
+
+#. module: module_pch
+#: model:ir.ui.view,arch_db:module_pch.report_state_invoices
+msgid "Total"
+msgstr "Total"
+
+#. module: module_pch
+#: model:ir.actions.act_window,name:module_pch.action_view_invoice_masive_boss
+msgid "Validate by boss"
+msgstr "Validar por jefe"
+
+#. module: module_pch
+#: model:ir.model.fields,field_description:module_pch.field_account_invoice_boss_validate
+#: model:ir.ui.view,arch_db:module_pch.add_field_boss_validate
+msgid "Validate for boss"
+msgstr "Validar por jefe"
+
+#. module: module_pch
+#: model:ir.ui.view,arch_db:module_pch.wizard_validate_boss_masive_invoice
+msgid "Validate invoices"
+msgstr "Validar facturas"
+
+#. module: module_pch
+#: model:ir.ui.view,arch_db:module_pch.add_field_boss_validate
+msgid "Validations"
+msgstr "Validaciones"
+
+#. module: module_pch
+#: code:addons/module_pch/models/invoice.py:40
+#, python-format
+msgid "Warning!"
+msgstr "Cuidado!"
+
+#. module: module_pch
+#: model:ir.model,name:module_pch.model_wizard_boss_validate_invoice_multi
+msgid "wizard.boss.validate.invoice.multi"
+msgstr ""
+
+#. module: module_pch
+#: model:ir.model,name:module_pch.model_wizard_report_invoices_state
+msgid "wizard.report.invoices.state"
+msgstr ""
+
+#. module: module_pch
+#: model:ir.ui.view,arch_db:module_pch.add_field_boss_validate
+msgid "write tax with sql"
+msgstr "Escribir impuestos con sql"
+
+#. module: module_pch
+#: model:ir.ui.view,arch_db:module_pch.wizard_validate_boss_masive_invoice
+msgid "¿Are you sure you want to validate your invoices??"
+msgstr "¿Estás seguro de que deseas validar tus facturas?"

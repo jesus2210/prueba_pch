@@ -19,6 +19,7 @@
     "name": "Extra validation for invoices",
     "version": "1.0",
     "category": "Accounting",
+    "author": "Alan Guzmán",
     "description": """
     This module adds extra validations when validating invoices and \
     generates a pdf report

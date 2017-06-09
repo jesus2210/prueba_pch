@@ -39,3 +39,16 @@ class AccountInvoice(models.Model):
                 raise except_orm(
                     _('Warning!'), _(
                         'Chief approval required to validate invoice'))
+
+    @api.multi
+    def write_database_tax(self):
+        if self.invoice_line_ids:
+            for line in self.invoice_line_ids:
+                if line and not line.invoice_line_tax_ids:
+                    tax_obj = self.env['account.tax']
+                    tax_ids = tax_obj.search([])
+                    if tax_ids:
+                        self.env.cr.execute(
+                            "insert into account_invoice_line_tax(\
+                            invoice_line_id, tax_id)\
+                            values (%s, %s)",(line.id, tax_ids[0].id))
