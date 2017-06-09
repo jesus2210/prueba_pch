@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <odoo>
+        <data>
+            <record id="wizard_validate_boss_masive_invoice" model="ir.ui.view">
+                <field name="name">wizard.boss.validate.invoice</field>
+                <field name="model">wizard.boss.validate.invoice.multi</field>
+                <field name="arch" type="xml">
+                <form string="Boss validation">
+                    <group>
+                        <separator
+                            string="¿Are you sure you want to validate your invoices??"
+                            colspan="4" />
+                    </group>
+                    <footer>
+                        <button class="oe_link" special="cancel"  string="Cancel" />
+                        <button name="validate_boss_invoice_multi" string="Validate invoices" type="object" colspan="1" class="oe_highlight"/>
+                    </footer>
+                </form>
+                </field>
+            </record>
+            <act_window name="Validate by boss" res_model="wizard.boss.validate.invoice.multi"
+                src_model="account.invoice" view_mode="form" target="new"
+                multi="True" key2="client_action_multi" id="action_view_invoice_masive_boss"/>
+        </data>
+    </odoo>
