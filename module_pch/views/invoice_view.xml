@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <odoo>
+        <data>
+            <record model="ir.ui.view" id="add_field_boss_validate">
+                <field name="name">add.field.boss.validate</field>
+                <field name="model">account.invoice</field>
+                <field name="inherit_id" ref="account.invoice_form"/>
+                <field name="arch" type="xml">
+                    <xpath expr="//field[@name='state']" position="before">
+                        <button attrs="{'invisible': ['|', ('boss_validate', '=', True), ('state', '!=', 'draft')]}" type="object" name="validate_boss" string="Validate for boss" class="oe_highlight" />
+                    </xpath>
+                    <xpath expr="/form/sheet/notebook/page/group" position="after">
+                        <separator string="Validations"/>
+                        <group>
+                            <field name="boss_validate"/>
+                        </group>
+                    </xpath>
+                </field>
+            </record>
+            <record model="ir.ui.view" id="invoice_tree_boss_val">
+                <field name="name">invoice.tree.boss.val</field>
+                <field name="model">account.invoice</field>
+                <field name="inherit_id" ref="account.invoice_tree"/>
+                <field name="arch" type="xml">
+                    <xpath expr="//field[@name='number']" position="after">
+                        <field name="boss_validate"/>
+                    </xpath>
+                </field>
+            </record>
+        </data>
+    </odoo>
