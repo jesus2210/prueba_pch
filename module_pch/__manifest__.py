@@ -25,12 +25,16 @@
     """,
     "license": "AGPL-3",
     "depends": [
-     'account',
+        'account',
+        'report'
     ],
     "demo": [],
     "data": [
         'views/invoice_view.xml',
-        'wizard/invoice_validate_boss.xml'
+        'wizard/invoice_validate_boss.xml',
+        'wizard/wizard_report_view.xml',
+        'report/report_template.xml',
+        'report.xml'
     ],
     "test": [],
     "js": [],

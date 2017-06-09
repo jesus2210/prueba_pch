@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <odoo>
+        <data>
+            <template id="report_state_invoices">
+                <t t-call="report.html_container">
+                    <t t-foreach="docs" t-as="o">
+                        <t t-call="report.external_layout">
+                            <div class="page">
+                                <h3>Reporte de facturas por estado</h3>
+                                <br/>
+                                <table class="table-responsive table-bordered table-condensed table-striped">
+                                    <thead>
+                                        <tr>
+                                            <th>Cliente</th>
+                                            <th>Número</th>
+                                            <th>Fecha</th>
+                                            <th>Responsable</th>
+                                            <th>Terminos de pago</th>
+                                            <th>Subtotal</th>
+                                            <th>Impuestos</th>
+                                            <th>Total</th>
+                                            <th>Estado</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr t-foreach="o.get_invoices()" t-as="invoice">
+                                            <td class="success">
+                                                <t t-if="invoice.partner_id.name">
+                                                    <span t-esc="invoice.partner_id.name"/>
+                                                </t>
+                                                <t t-if="not invoice.partner_id">
+                                                    <span>S/N</span>
+                                                </t>
+                                            </td>
+                                            <td class="danger">
+                                                <t t-if="invoice.number">
+                                                    <span t-esc="invoice.number"/>
+                                                </t>
+                                                <t t-if="not invoice.number">
+                                                    <span>S/N</span>
+                                                </t>
+                                            </td>
+                                            <td class="info">
+                                                <t t-if="invoice.date_invoice">
+                                                    <span t-esc="invoice.date_invoice"/>
+                                                </t>
+                                                <t t-if="not invoice.date_invoice">
+                                                    <span>S/N</span>
+                                                </t>
+                                            </td>
+                                            <td class="success">
+                                                <t t-if="invoice.user_id">
+                                                    <span t-esc="invoice.user_id.name"/>
+                                                </t>
+                                                <t t-if="not invoice.user_id.name">
+                                                    <span>S/N</span>
+                                                </t>
+                                            </td>
+                                            <td class="danger">
+                                                <t t-if="invoice.payment_term_id">
+                                                    <span t-esc="invoice.payment_term_id.name"/>
+                                                </t>
+                                                <t t-if="not invoice.payment_term_id">
+                                                    <span>S/N</span>
+                                                </t>
+                                            </td>
+                                            <td class="info">
+                                                <t t-if="invoice.amount_untaxed">
+                                                    <span t-esc="invoice.amount_untaxed"/>
+                                                </t>
+                                                <t t-if="not invoice.amount_untaxed">
+                                                    <span>S/N</span>
+                                                </t>
+                                            </td>
+                                            <td class="success">
+                                                <t t-if="invoice.amount_tax">
+                                                    <span t-esc="invoice.amount_tax"/>
+                                                </t>
+                                                <t t-if="not invoice.amount_tax">
+                                                    <span>S/N</span>
+                                                </t>
+                                            </td>
+                                            <td class="danger">
+                                                <t t-if="invoice.amount_total">
+                                                    <span t-esc="invoice.amount_total"/>
+                                                </t>
+                                                <t t-if="not invoice.amount_total">
+                                                    <span>S/N</span>
+                                                </t>
+                                            </td>
+                                            <td class="info">
+                                                <t t-if="invoice.state">
+                                                    <span t-esc="invoice.state"/>
+                                                </t>
+                                                <t t-if="not invoice.state">
+                                                    <span>S/N</span>
+                                                </t>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </t>
+                    </t>
+                </t>
+            </template>
+        </data>
+    </odoo>

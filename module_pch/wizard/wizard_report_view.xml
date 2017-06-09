@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <odoo>
+        <data>
+            <record id="wizard_report_invoices_state" model="ir.ui.view">
+                <field name="name">wizard.report.invoices.state</field>
+                <field name="model">wizard.report.invoices.state</field>
+                <field name="arch" type="xml">
+                    <form string="Generate invoice reporting" version="7.0">
+                        <sheet>
+                            <group>
+                                <group>
+                                    <field name="invoice_state"/>
+                                    <p>Apply filter by invoice status</p>
+                                </group>
+                            </group>
+                        </sheet>
+                        <footer>
+                            <button name="generate_report" string="Generate report" type="object" colspan="1" default_focus="1" class="oe_highlight"/>
+                            <button  class="oe_link" special="cancel" string="Cancelar"/>
+                            <p>Press the button to generate report or cancel to close the window.</p>
+                        </footer>
+                    </form>
+                </field>
+            </record>
+
+            <record id="action_wizard_view_report" model="ir.actions.act_window">
+                <field name="name">Report invoice state</field>
+                <field name="type">ir.actions.act_window</field>
+                <field name="res_model">wizard.report.invoices.state</field>
+                <field name="view_type">form</field>
+                <field name="view_mode">form</field>
+                <field name="target">new</field>
+                <field name="help">Generate an invoice report by states</field>
+            </record>
+
+            <menuitem name="Report invoices by state" parent="account.menu_finance_receivables" action="action_wizard_view_report" id="menu_generate_report_invoices_wizard" sequence="150"/>
+        </data>
+    </odoo>
